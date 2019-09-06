@@ -1,9 +1,9 @@
 # Android_ADB_UI
 
-this tools was created to skip the adb installation commands everytime to 
+This tools was created to skip the adb installation commands everytime to 
 view installed packages / install / uninstall packages
 
-just downloading the folder and running sanicapp.py can initiate a local web server with UI 
+Just downloading the folder and running sanicapp.py can initiate a local web server with UI 
 
 Notes:
 
