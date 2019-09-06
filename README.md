@@ -1,7 +1,8 @@
 # Android_ADB_UI
 
 This tools was created to skip the adb installation commands everytime to 
-view installed packages / install / uninstall packages
+view installed packages / install / uninstall packages.
+This was a personal utility and learning project created with python3 sanic framework, JS, angular.
 
 Just downloading the folder and running sanicapp.py can initiate a local web server with UI 
 This can be viewed in browser with localhost:8080
