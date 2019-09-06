@@ -4,6 +4,7 @@ This tools was created to skip the adb installation commands everytime to
 view installed packages / install / uninstall packages
 
 Just downloading the folder and running sanicapp.py can initiate a local web server with UI 
+This can be viewed in browser with localhost:8080
 
 Notes:
 
