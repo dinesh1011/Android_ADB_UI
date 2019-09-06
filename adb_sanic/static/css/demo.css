@@ -1,0 +1,161 @@
+@charset "UTF-8";
+.demoapp {
+	text-align: center;
+	color: #0B39A9;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-style: italic;
+	text-shadow: 0px 0px #95111A;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.getdevices {
+	padding-top: 20px;
+}
+.devices {
+	margin-left: 150px;
+	width: 50%;
+	text-align: center;
+	color: #9D0A0D;
+	border-collapse: separate;
+	font-weight: bold;
+}
+.getpackages {
+	padding-top: 20px;
+	z-index: auto;
+}
+.bodymain .getpackages .packagerefresh {
+	width: 50px;
+	height: 50px;
+	float: left;
+	opacity: 1;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin-left: 5%;
+}
+.bodymain .getpackages #packagebutton {
+	float: left;
+}
+.bodymain .getpackages .url {
+	color: #FCFCFC;
+	text-align: left;
+	padding-left: 10px;
+	color: #009C3B;
+	background-color: inherit;
+
+}
+.packages {
+	margin-left: 155px;
+	width: 50%;
+	text-align: center;
+	color: #9D0A0D;
+	font-weight: bold;
+	border-collapse: separate;
+	height: auto;
+}
+.installs {
+	margin-left: 150px;
+	width: 50%;
+	text-align: center;
+	color: #9D0A0D;
+	font-weight: bold;
+	border-collapse: separate;
+	height: auto;
+}
+.packagelist {
+	width: 100%;
+	height: 100%;
+	padding-left: 0px;
+	float: right;
+	border: none;
+	margin-bottom: 0px;
+}
+#fileField {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.plist {
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+
+h2 {
+	text-align: left;
+	padding-left: 10px;
+	color: #009C3B;
+	background-color: inherit;
+}
+h1 {
+	color: #3183AA;
+	text-align: center;
+	background-image: inherit;
+}
+.bodyback h1 {
+}
+
+.bodymain {
+	background-repeat: none;
+}
+.bodymain {
+	background-image: -webkit-linear-gradient(270deg,rgba(183,229,180,1.00) 0%,rgba(212,182,182,1.00) 50.68%,rgba(182,222,180,1.00) 99.86%);
+	background-image: -moz-linear-gradient(270deg,rgba(183,229,180,1.00) 0%,rgba(212,182,182,1.00) 50.68%,rgba(182,222,180,1.00) 99.86%);
+	background-image: -o-linear-gradient(270deg,rgba(183,229,180,1.00) 0%,rgba(212,182,182,1.00) 50.68%,rgba(182,222,180,1.00) 99.86%);
+	background-image: linear-gradient(180deg,rgba(183,229,180,1.00) 0%,rgba(212,182,182,1.00) 50.68%,rgba(182,222,180,1.00) 99.86%);
+	width: 100%;
+	height: 100%;
+}
+
+.bodymain .getpackages #uninstall {
+	color: #009C3B;
+	font-size: medium;
+	background-color: #172B4D;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	border-collapse: collapse;
+	text-align: center;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	font-style: normal;
+	font-weight: bold;
+	float: left;
+	margin-left: 45%;
+}
+
+.bodymain .installpackages #install {
+	color: #009C3B;
+	font-size: medium;
+	background-color: #172B4D;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	border-collapse: collapse;
+	text-align: center;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	font-style: normal;
+	font-weight: bold;
+	float: left;
+	margin-left: 54%;
+}
+
+.bodymain .getpackages #packageAvailablity{
+	color: #9D0A0D;
+	font-size: medium;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-weight: bold;
+	float: left;
+	margin-left: 10px;
+}
+
+.bodymain .installpackages #deviceAvailablity{
+	color: #9D0A0D;
+	font-size: medium;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-weight: bold;
+	float: left;
+	margin-left: 10px;
+}
+
+.testspace{
+	background-color: inherit;
+}

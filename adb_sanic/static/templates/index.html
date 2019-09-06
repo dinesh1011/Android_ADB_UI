@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<title>easy ADB</title>
+<link rel="shortcut icon" type="image/png" href="static/images/25554966.png"/>
+<link href="static/css/demo.css" rel="stylesheet" type="text/css">
+<script src="static/js/1.6.4-angular.min.js"></script>
+</head>
+
+<body class="bodymain" ng-app="adbInstallation" ng-controller="installationController">
+
+<h1>easy ADB</h1>
+<div class="getdevices" id="connectedDevices">
+  <h2>Connected devices: </h2>
+  <table width="200" border="1" class="devices" id="devices">
+    <tbody>
+      <tr>
+          <td>Device Id</td>
+          <td>Device Name</td>
+      </tr>
+      <tr ng-repeat="(deviceId, device) in connectedDevices">
+          <td>//deviceId//</td>
+          <td>//device//</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="getpackages">
+<h2 class="packagelists">
+ View List of installed packages:&nbsp; </h2>
+ <img src="../static/images/refresh.png" alt="" class="packagerefresh" ng-click="refreshPackages()" />
+<p id="packageAvailablity" ng-show="!packageTable">//packageMessage// </p>
+<input name="uninstallbutton" type="button" id="uninstall" value="UnInstall" ng-click="uninstall()" ng-show="packageTable">
+<br>
+<br>
+<table width="200" border="1" class="packages" ng-show="packageTable" ng-model="packageList">
+    <tbody>
+      <tr ng-repeat="(deviceId, packages) in packageList" ng-init="apps=packages; device = deviceId">
+        <td class="pdevice"> //deviceId// </td>
+        <td>
+        <table width="200" border="1" class="packagelist">
+          <tbody>
+            <tr ng-repeat="package in apps" class="plist" ng-init="app = package">
+              <td>//package//</td>
+              <td><input name="checkbox" type="checkbox" class="selectpackage" ng-model="selectpackage[device][package]">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- <p>  test text //packageList// </p>
+<p>  test text //selectpackage// </p> -->
+
+<br>
+<div class="installpackages">
+<h2 class="packagelists"> Select packages And install </h2>
+<p id="deviceAvailablity">//deviceMessage// </p>
+<input name="installbutton" type="button" id="install" value="Install" ng-click="installOneByOne()" ng-show="deviceAvailability">
+<br>
+<br>
+<table width="200" border="1" class="installs" ng-show="deviceAvailability" ng-model="connectedDevices">
+    <tbody>
+      <tr ng-repeat="(deviceId, device) in connectedDevices">
+          <td>//deviceId//</td>
+          <td>//device//</td>
+          <td><input type="text" name="fileField" id="fileField" class="fileInput" ng-model="fileInput" ng-change="fileChange()"></td>
+          <td><input name="checkbox2" type="checkbox" class="selectfile" ng-model="selectfile[deviceId][fileInput]"></td>
+          <td class="requestProgress" ng-model="requestProgress[deviceId]">Progress: //requestProgress[deviceId]//</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="testspace">
+<!--<p>//selectfile//</p> -->
+<p><br></p>
+<p><br></p>
+<p><br></p>
+</div>
+
+<script src="static/js/adb_app.js"></script>
+</body>
+</html>
