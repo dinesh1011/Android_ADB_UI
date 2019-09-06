@@ -20,7 +20,7 @@ def get_devices():
 
 def get_installed_packages(deviceid):
     packages = []
-    get_packages = subprocess.Popen("adb -s %s shell pm list packages -3 | grep -i grab | cut -d'"':'"' -f2" %deviceid, stdout=subprocess.PIPE, shell=True)
+    get_packages = subprocess.Popen("adb -s %s shell pm list packages -3 |cut -d'"':'"' -f2" %deviceid, stdout=subprocess.PIPE, shell=True)
     for package in get_packages.stdout:
         if(package.decode("UTF-8").strip(" \t\r\n") != ""):
             packages.append(package.decode("UTF-8").strip(" \t\r\n"))
